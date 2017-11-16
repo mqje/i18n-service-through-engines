@@ -1,0 +1,12 @@
+{
+  "name": "shared-i18n-engine",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "ember-cli-babel": "*",
+    "ember-i18n": "^5.0.2"
+  }
+}

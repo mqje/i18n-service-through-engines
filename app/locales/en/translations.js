@@ -1,3 +1,4 @@
 export default {
-    "language": 'english'
+  "language": 'en',
+  "test": "Test Application translation"
 };

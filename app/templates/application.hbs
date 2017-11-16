@@ -1,9 +1,22 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!-- Feel free to remove this! --}}
-<h1>
-Language: {{t 'language'}}
-</h1>
-{{#link-to "test-engine"}}
-  Engine
+
+<fieldset>
+  <h1>Application</h1>
+<p>
+  'test' key translation: <b>{{t 'test'}}</b>
+</p>
+<p>
+  'engine-test' key translation: <b>{{t 'engine-test'}}</b> <br>
+  This is 'normal', because we don't want the translation from the engine to "pollute" the application
+</p>
+  <p>What I am trying to achieve here is to share the 'i18n' service , but still use the translations keys from the engine in them. </p>
+{{#link-to "shared-i18n-engine"}}
+  Shared i18n engine
+{{/link-to}}<br>
+{{#link-to "not-shared-i18n-engine"}}
+  Not shared i18n engine
 {{/link-to}}
+</fieldset>
 {{outlet}}
+Language: {{t 'language'}}

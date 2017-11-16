@@ -7,8 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.mount('test-engine');
-  this.route('test-route');
+  this.mount('shared-i18n-engine');
+  this.mount('not-shared-i18n-engine');
 });
 
 export default Router;
